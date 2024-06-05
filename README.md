@@ -1,11 +1,14 @@
 # digits
 
 Project Information
+    ```
     - Dataset: MNIST dataset
     - Objective: Classify handwritten digits (0-9) using image data.
     - Skills: Image preprocessing, convolutional neural networks (CNNs), model evaluation. 
+    ```
 
 Steps taken to implement
+
     1. Setup the Environment
     ```
         pip install numpy pandas matplotlib seaborn scikit-learn tensorflow keras
