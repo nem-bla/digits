@@ -1,14 +1,13 @@
 # digits
 
 Project Information
-    ```
+
     - Dataset: MNIST dataset
 
     - Objective: Classify handwritten digits (0-9) using image data.
 
     - Skills: Image preprocessing, convolutional neural networks (CNNs), model evaluation. 
 
-    ```
 
 Steps taken to implement:
 
