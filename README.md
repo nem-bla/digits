@@ -30,11 +30,15 @@ Sequential Model
 | dense_1 (Dense)               | (None, 10)         | 1,290   |
 
 **Total params:** 693,962 (2.65 MB)
+
 **Trainable params:** 693,962 (2.65 MB)
+
 **Non-trainable params:** 0 (0.00 B)
 
 
+
 **Per Epoch Training Loss and Accuracy**
+```
 Epoch 1/10
 300/300 - 4s - 14ms/step - accuracy: 0.9311 - loss: 0.2492 - val_accuracy: 0.9735 - val_loss: 0.0860
 Epoch 2/10
@@ -57,6 +61,6 @@ Epoch 10/10
 300/300 - 4s - 14ms/step - accuracy: 0.9979 - loss: 0.0077 - val_accuracy: 0.9826 - val_loss: 0.0587
 Test loss: 0.058656297624111176
 Test accuracy: 0.9825999736785889
-
+```
 
 
