@@ -90,3 +90,8 @@ plt.show()
 
 # Classification report
 print(classification_report(y_true, y_pred_classes))
+
+
+# Save the model for use in run.py
+model.save('digits.h5')
+
