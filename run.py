@@ -48,12 +48,20 @@ def save_and_predict(canvas, fileName):
     prediction = model.predict(img)
     predicted_class = np.argmax(prediction, axis=1)
     
-    # Update the label with the prediction
-    result_label.config(text=f'Predicted class: {predicted_class[0]}')
+    # Show prediction in a pop-up text box
+    prediction_popup(predicted_class[0])
+
+def prediction_popup(prediction):
+    popup = Toplevel(root)
+    popup.title("Prediction")
+    popup.geometry("200x100")
+    label = Label(popup, text=f'Number written: {prediction}', font=('Helvetica', 12))
+    label.pack(expand=True)
+    button = Button(popup, text="OK", command=popup.destroy)
+    button.pack()
 
 def clear_canvas():
     canvas.delete('all')
-    result_label.config(text='')
 
 root = tk.Tk()
 
@@ -69,8 +77,5 @@ submit_btn.place(x=150, y=300)
 
 clear_btn = Button(root, text='Clear', width=5, height=3, bd='10', command=clear_canvas)
 clear_btn.place(x=230, y=300)
-
-result_label = Label(root, text='', font=('Helvetica', 12))
-result_label.place(x=150, y=350)
 
 root.mainloop()
